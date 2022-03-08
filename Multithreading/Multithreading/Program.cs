@@ -24,6 +24,15 @@ namespace Multithreading
             stopwatch.Stop();
             Console.WriteLine("Duration without thread" + stopwatch.ElapsedMilliseconds);
             Console.WriteLine("-------");
+
+            Stopwatch stopwatch1 = new Stopwatch();
+            stopwatch1.Start();
+            employeePayrolloperations.AddEmployeeToPayrollWithThread(employeeDetails);
+            stopwatch1.Stop();
+            Console.WriteLine("Duration with thread\t" + stopwatch1.ElapsedMilliseconds);
+            Console.WriteLine("Employee count" + employeePayrolloperations.EmployeeCount());
+            //Iterating for loop Without Task();
+            //Iterating for loop With Task();
         }
     }
 }
