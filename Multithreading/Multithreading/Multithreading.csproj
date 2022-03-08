@@ -47,6 +47,8 @@
     <Compile Include="EmployeePayrollOperations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestingMultithreadingSpeed.cs" />
+    <Compile Include="TPLClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

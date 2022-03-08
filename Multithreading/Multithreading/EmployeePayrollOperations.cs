@@ -45,6 +45,10 @@ namespace Multithreading
         {
             employeePayrollDetailList.Add(emp);
         }
+        public void AddEmployeePayrollwithThread(EmployeeDetails emp)
+        {
+            employeePayrollDetailListwithThread.Add(emp);
+        }
         public int EmployeeCount()
         {
             return this. employeePayrollDetailList.Count;
